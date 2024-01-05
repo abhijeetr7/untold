@@ -1,0 +1,18 @@
+var i = 0;
+var txt1 =
+  "Hi Love.....!  <<               Now I wan't to say something special to you. <<<                So , Please read everything carefully...!                                                                           > I just wanted to remind you that i love you with all my heart and im so thankful that you're in my life, i will always be by your side my love. Some fall in love with a pretty face, some fall in love with a kind heart - I found both of these within you. Never forget how special you are to Me.  << My name meaning is the Sanskrit name for Vega, the brightest star in the northern constellation of Lyra. It also refers to a period of 48 minutes centered on solar noon which is considered a good time (Muhurat) to start any task. But for me You’re my brightest star from all the constellation...! <<   I know it’s kind of filmy one or the poetic one but if you gonna ask for me how much you mean to me then this is it You’re my comfort, you’re my home, you’re my love and most lovable person i had ever met I wasn’t believing that this all is happening with me and you were becoming so special to me...!        > Every morning, I wake up with a big smile on my face, thinking about spending my day with you. You are always on my mind, and I wait for every second to see you and have you by my side. My life has a different meaning now, as you are a part of it. You make me feel weak in the knees and give me butterflies in the stomach. It is a wonderful feeling to be around you. I never thought I could feel this about someone. It is incredible how your sheer presence makes me happy. I love the way you make me feel. I started loving sleeping at night because even though we are away, I get to see you in my dreams, fulfilling every bit of my life. I see us sharing our lives and weaving our beautiful future. My dreams make my belief in ‘us’ stronger...!                     << The jitters I experience inside me are something that I have never experienced before. It is irresistibly ecstatic to be in your presence and share the fondness that I have for you. You are an angel who has come to my life to make it worthy and meaningful. You are everything that my heart was looking for. I feel blessed to have you in my life. My heart races every time you smile, and I skip a beat when you look at me...!                                                     > The feeling differs from infatuation, as I have never felt this way. Everything you do profoundly impacts me, and I cannot get over the thought of being with you. When I saw you for the first time, I was struck by your magnetic aura. Something about you is so unique that it draws me towards you like a moth to a flame. It is irresistible to like you. I know you a little more every day and like you even more. You are the cutest person I know and the kindest of all. Your pure heart, honesty, and sentimentality have won over me...!                    << I Love my Parents so much than anything else in this world. Now You are the only person  whom I love equally with my parents....!                                                             >I Love U <SweetHeart.....! |                  <<<< Give me One chance to Prove my Love ...!   by Jeet";
+var speed = 55;
+typeWriter();
+function typeWriter() {
+  if (i < txt1.length) {
+    if (txt1.charAt(i) == "<")
+      document.getElementById("text1").innerHTML += "</br>";
+    else if (txt1.charAt(i) == ">")
+      document.getElementById("text1").innerHTML = "";
+    else if (txt1.charAt(i) == "|") {
+      $(".bg_heart").css("background-image", "')");
+    } else document.getElementById("text1").innerHTML += txt1.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
